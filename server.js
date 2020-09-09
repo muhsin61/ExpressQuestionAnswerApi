@@ -1,7 +1,7 @@
 const express = require("express");
 const dotenv = require("dotenv");
 
-const routers = require("./routers/index")
+const routers = require("./routers/index");
 
 //env variables
 dotenv.config({
@@ -11,10 +11,7 @@ dotenv.config({
 const app = express();
 const PORT = process.env.PORT;
 
-app.use("/api",routers);//middleware 
-
-
-
+app.use("/api", routers); //middleware
 
 //npm run dev için "dev": nodemon.
 //env içine istenilen dosyalara ulaşmak için.
